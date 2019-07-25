@@ -7,7 +7,7 @@ const accepted = props => {
   return (
     <div className="accepted">
       <div className="display">
-        <h1>You have won R {props.winning}</h1>
+        <h1>You Have Won R {props.winning}</h1>
         <h1>Your Case Was</h1>
         <img
           className="imgClass"
