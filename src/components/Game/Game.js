@@ -127,11 +127,6 @@ class Game extends Component {
               this.setState(
                 {
                   userValue: this.state.openCases[this.state.userCase - 1].value
-                },
-                () => {
-                  console.log("Usercase is " + this.state.userCase);
-                  console.log("User Value is " + this.state.userValue);
-                  console.log("Case Selected is " + this.state.caseSel);
                 }
               );
             }
@@ -171,14 +166,6 @@ class Game extends Component {
                   //the set timeout function is called after 2 seconds to remove the case image and
                   //return the user back to the caseSelection screen
                   setTimeout(() => {
-                    console.log("Selected Case is " + this.state.selectedCase);
-                    console.log(
-                      "RemainingValue is " + this.state.remainingValue
-                    );
-                    console.log(
-                      "RemainingCases is " + this.state.remainingCases
-                    );
-                    console.log("Case Selected is " + this.state.caseSel);
                     this.caseOpen();
                   }, 2000);
                 }
