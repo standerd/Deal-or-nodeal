@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In order to install the app, please cd into the directory of the project, the run:
 
-## Available Scripts
+### `npm install`
 
-In the project directory, you can run:
+In the project directory, you the need to run:
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Game Rules:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The object of the game is to get the banker to offer you more
+money then what you have in the suitcase that you selected.
 
-### `npm test`
+As the game progresses the bankers offer will change depending on
+the values that are in the remaining cases.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The main goal is to try and pick suitcases with the smallest
+values inside them. This way you will obtain higher offers from
+the bank.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. On the first screen please select your case.
+2. On the second screen you will be shown a heading indicating how
+   many suitcases you are to select in the round. This number will
+   reduce as you select cases to indicate how many cases are
+   remaining in the current round.
+3. Once the remaing suitcases reach 0, a page will display where
+   the banker will offer you a sum of money for your suitcase.
+4. You can either accept his offer or reject his offer and continue
+   with the game.
+5. The suitcases that you need to select will reduce in each round
+   and be indicated in the heading.
+6. Once you reach only 1 case remaining and you still decline the
+   bankers offer. You will win whatever value was contained inside
+   the suitcase that you had selected.
+7. GOOD LUCK
